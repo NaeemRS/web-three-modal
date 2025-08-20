@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme="dark"] {
+  --background: rgb(255, 255, 255);
+  --foreground: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.sidebar-active-light {
+  background-color: #f8f0ff;
+  color: #9e3ffd !important;
+  font-weight: 700 !important;
+}
+.sidebar-active-light span {
+  font-weight: 700 !important;
+}
+
+.nav-list li div img:first-child {
+  display: inline-block;
+}
+
+.nav-list li div img:nth-child(2) {
+  display: none;
+}
+
+.nav-list li div.sidebar-active-light img.icon-gray:first-child {
+  display: none;
+}
+.nav-list li div:hover img.icon-gray:first-child {
+  display: none;
+}
+.nav-list li div.sidebar-active-light img:nth-child(2) {
+  display: inline-block;
+}
+.nav-list li div:hover img:nth-child(2) {
+  display: inline-block;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+body,
+span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* .marquee-container {
+    margin-top: 80px;
+    --pause-on-hover: paused !important;
+    --pause-on-click: running !important;
+} */
+.marquee {
+  --duration: 45s !important;
+}
+.marquee-container .overlay::before,
+.marquee-container .overlay::after {
+  background: rgba(255, 0, 0, 0) !important;
+}
+
+.custom-navbar-toggler:after {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  left: 0;
+  position: fixed;
+  right: -20px;
+  top: -63px;
+  transform: scale(100);
+  -o-transform: scale(100);
+  -moz-transform: scale(100);
+  -webkit-transform: scale(100);
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  transform-origin: top right;
+  margin: 0 0 0 20px;
+  -webkit-box-shadow: 0 0 0 1000px rgb(0 0 0 / 60%);
+  box-shadow: 0 0 0 1000px rgb(0 0 0 / 60%);
+}
+.custon-select img {
+  width: 10px;
+  height: 11px;
+}
+
+.LiquidityCard1 .Provide-iquidity li:nth-child(5) {
+  position: relative;
+  color: #9e3ffd !important;
+  cursor: pointer;
+}
+.LiquidityCard1 .Provide-iquidity li:nth-child(5)::after {
+  content: "";
+  background-image: url(../public/images/arrow-plain.svg);
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  padding: 0px 20px 0 0;
+  background-size: 70%;
+  cursor: pointer;
+}
+.uYscM {
+  z-index: 999 !important;
+}
+.apexcharts-yaxistooltip {
+  color: #9e3ffd !important;
+}
+.text-red {
+  color: #ff0000 !important;
+}
+.text-green {
+  color: #1ecb4f;
+}
+.text-black {
+  color: #1b264a;
+}
+.text-purple {
+  color: #9e3ffd;
+}
+@media (max-width: 767px) {
+  .LiquidityCard1 .Provide-iquidity li:nth-child(5)::after {
+    content: "";
+    background-image: url(../public/images/arrow-plain.svg);
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    background-size: 55%;
+    cursor: pointer;
+  }
+}
+table tbody:last-child tr {
+  border-bottom: none !important;
+}
+
+/* Loader css */
+
+#loader-2 span {
+  margin: 35px 5px;
+}
+
+#loader-2 span:nth-child(1) {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+#loader-2 span:nth-child(2) {
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+#loader-2 span:nth-child(3) {
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
